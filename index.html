@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ponvasantham Construction — Building Across Tamil Nadu &amp; Pondicherry Since 2011</title>
+<meta name="description" content="Ponvasantham Construction Pvt Ltd — residential &amp; commercial buildings, renovation, landscaping, swimming pools, driveways &amp; pathways. Founded 2011 in Pondicherry, serving Tamil Nadu &amp; Pondicherry.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="importmap">
+{ "imports": { "lenis": "https://cdn.jsdelivr.net/npm/lenis@1.1.18/+esm" } }
+</script>
+<style>
+:root{
+  --ink:#14181f;
+  --navy:#0d1b2e;
+  --navy-deep:#0a1420;
+  --gold:#c9974a;
+  --gold-light:#e0b76b;
+  --surface:#f6f4ef;
+  --surface-2:#eeebe3;
+  --ink-soft:#6b6f76;
+  --hairline:#e3e0d7;
+  --on-dark:#ffffff;
+  --radius:0.5rem;
+  --font-display:"Playfair Display", Georgia, serif;
+  --font-script:"Petit Formal Script", cursive;
+  --font-body:"Inter", system-ui, sans-serif;
+  --ease: cubic-bezier(.16,1,.3,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+img{display:block;max-width:100%;}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px;}
+html.lock{overflow:hidden;height:100%;}
+body{
+  background:var(--surface);
+  color:var(--ink);
+  font-family:var(--font-body);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:clip;
+}
+h1,h2,h3{font-family:var(--font-display);font-weight:600;}
+.wrap{max-width:78rem;margin-inline:auto;padding:0 1.5rem;}
+@media (min-width:768px){ .wrap{padding:0 2.5rem;} }
+section{position:relative;}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 800ms var(--ease),transform 800ms var(--ease);}
+.reveal.in{opacity:1;transform:translateY(0);}
+@media (prefers-reduced-motion: reduce){ .reveal{transition-duration:1ms;} }
+
+/* buttons */
+.btn{
+  display:inline-flex;align-items:center;gap:0.6rem;
+  padding:0.95rem 1.9rem;font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;
+  border-radius:2px;transition:background 250ms var(--ease),color 250ms var(--ease),border-color 250ms var(--ease);
+}
+.btn-gold{background:var(--gold);color:#1b1204;}
+.btn-gold:hover{background:var(--gold-light);}
+.btn-ghost{color:var(--on-dark);border-bottom:1px solid rgba(255,255,255,0.5);padding:0.5rem 0;}
+.btn-ghost:hover{border-color:#fff;}
+.btn-ghost svg{width:0.9rem;height:0.9rem;transition:transform 250ms var(--ease);}
+.btn-ghost:hover svg{transform:translateX(4px);}
+.btn-dark{background:var(--navy);color:#fff;}
+.btn-dark:hover{background:var(--navy-deep);}
+
+/* ============ HEADER ============ */
+header.site-header{
+  position:absolute;inset:0 0 auto 0;z-index:40;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.25rem 1.5rem;
+}
+@media (min-width:768px){ header.site-header{padding:1.75rem 2.5rem;} }
+header.site-header.solid{position:fixed;background:rgba(13,27,46,0.94);backdrop-filter:blur(10px);box-shadow:0 6px 24px rgba(0,0,0,0.15);}
+.logo-chip{display:flex;align-items:center;gap:0.6rem;}
+.logo-chip img{height:2.6rem;width:auto;filter:drop-shadow(0 1px 2px rgba(0,0,0,0.4));}
+.hdr-nav{display:none;align-items:center;gap:2.25rem;font-size:0.8rem;font-weight:500;text-transform:uppercase;letter-spacing:0.06em;color:#fff;}
+@media (min-width:1024px){ .hdr-nav{display:flex;} }
+.hdr-nav a{opacity:0.85;transition:opacity 200ms,color 200ms;position:relative;}
+.hdr-nav a:hover{opacity:1;color:var(--gold-light);}
+.hdr-right{display:flex;align-items:center;gap:1rem;}
+.hdr-call{display:none;color:#fff;font-size:0.8rem;font-weight:500;}
+@media (min-width:640px){ .hdr-call{display:inline;} }
+.burger{
+  display:grid;place-items:center;gap:5px;width:2.5rem;height:2.5rem;border-radius:var(--radius);
+  background:rgba(255,255,255,0.12);
+}
+@media (min-width:1024px){ .burger{display:none;} }
+.burger span{width:1.1rem;height:1.5px;background:#fff;display:block;}
+
+/* ============ HERO ============ */
+.hero{
+  position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;
+  isolation:isolate;overflow:hidden;color:#fff;
+}
+.hero-bg{position:absolute;inset:0;z-index:-2;}
+.hero-bg img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);}
+.hero-scrim{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg, rgba(10,18,30,0.55) 0%, rgba(10,18,30,0.35) 40%, rgba(10,18,30,0.9) 100%);}
+.hero-content{padding:8rem 1.5rem 4.5rem;max-width:52rem;}
+@media (min-width:768px){ .hero-content{padding:8rem 2.5rem 5.5rem;} }
+.hero-content h1{
+  font-size:2.5rem;line-height:1.08;letter-spacing:-0.01em;
+  border-bottom:3px solid var(--gold);padding-bottom:1rem;display:inline-block;
+}
+@media (min-width:640px){ .hero-content h1{font-size:3.4rem;} }
+@media (min-width:1024px){ .hero-content h1{font-size:4.2rem;} }
+.hero-services{
+  margin-top:1.5rem;font-size:0.8rem;letter-spacing:0.03em;color:rgba(255,255,255,0.85);
+  display:flex;flex-wrap:wrap;gap:0.5rem 0.9rem;text-transform:uppercase;font-weight:500;
+}
+.hero-services span:not(:last-child)::after{content:"·";margin-left:0.9rem;color:var(--gold-light);}
+.hero-actions{margin-top:2.25rem;display:flex;flex-wrap:wrap;align-items:center;gap:1.75rem;}
+
+/* ============ SPIRIT / ABOUT INTRO ============ */
+.spirit{background:var(--surface);padding:5rem 0 0;}
+.spirit-script{text-align:center;font-family:var(--font-script);font-size:2.75rem;color:var(--navy);}
+.spirit-grid{display:grid;grid-template-columns:1fr;gap:2.5rem;margin-top:3rem;align-items:start;}
+@media (min-width:900px){ .spirit-grid{grid-template-columns:1fr 1fr;gap:4rem;} }
+.spirit-text p{font-size:0.95rem;line-height:1.85;color:var(--ink-soft);}
+.spirit-text p + p{margin-top:1rem;}
+.spirit-text .founder{color:var(--ink);font-weight:600;}
+.spirit-link{display:inline-flex;align-items:center;gap:0.5rem;margin-top:1.5rem;font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:var(--navy);border-bottom:1px solid var(--gold);padding-bottom:0.35rem;}
+.spirit-link svg{width:0.9rem;height:0.9rem;transition:transform 250ms var(--ease);}
+.spirit-link:hover svg{transform:translateX(4px);}
+
+.collage{position:relative;}
+.collage-main{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;}
+.collage-main img{width:100%;height:100%;object-fit:cover;}
+.collage-inset{
+  position:absolute;right:-1rem;bottom:-2.5rem;width:45%;aspect-ratio:1/1;border-radius:var(--radius);overflow:hidden;
+  border:6px solid var(--surface);box-shadow:0 1.5rem 3rem rgba(10,18,30,0.25);
+}
+@media (max-width:640px){ .collage-inset{right:0.5rem;bottom:-2rem;width:42%;} }
+.collage-inset img{width:100%;height:100%;object-fit:cover;}
+
+/* stat band */
+.stat-band{margin-top:5rem;background:var(--navy);}
+.stat-band .wrap{display:grid;grid-template-columns:repeat(2,1fr);}
+@media (min-width:640px){ .stat-band .wrap{grid-template-columns:repeat(4,1fr);} }
+.stat-cell{padding:2.5rem 1rem;text-align:center;border-right:1px solid rgba(255,255,255,0.1);color:#fff;}
+.stat-cell:last-child{border-right:none;}
+.stat-cell .num{font-family:var(--font-display);font-size:2.5rem;font-weight:700;color:var(--gold-light);}
+.stat-cell .lbl{margin-top:0.4rem;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em;color:rgba(255,255,255,0.7);}
+
+/* trust / registration strip */
+.trust-strip{background:var(--surface-2);padding:1rem 0;}
+.trust-strip .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem 1.5rem;font-size:0.72rem;letter-spacing:0.03em;color:var(--ink-soft);text-align:center;text-transform:uppercase;}
+.trust-strip strong{color:var(--ink);font-weight:600;}
+
+/* ============ SERVICES ============ */
+.services{background:var(--surface);padding:6rem 0;}
+.section-head{max-width:36rem;}
+.eyebrow{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.18em;color:var(--gold);margin-bottom:0.75rem;}
+.eyebrow::before{content:"";width:1.5rem;height:1px;background:var(--gold);}
+.section-head h2{font-size:2.25rem;line-height:1.15;color:var(--navy);}
+@media (min-width:640px){ .section-head h2{font-size:2.75rem;} }
+.services-layout{display:grid;grid-template-columns:1fr;gap:3rem;margin-top:3rem;}
+@media (min-width:900px){ .services-layout{grid-template-columns:0.8fr 1.2fr;} }
+.services-image{border-radius:var(--radius);overflow:hidden;aspect-ratio:3/4;}
+.services-image img{width:100%;height:100%;object-fit:cover;}
+.service-row{display:flex;gap:1.25rem;padding:1.5rem 0;border-top:1px solid var(--hairline);}
+.service-row:last-child{border-bottom:1px solid var(--hairline);}
+.service-num{font-family:var(--font-display);font-size:1.1rem;color:var(--gold);flex:none;width:2rem;}
+.service-row h3{font-size:1.2rem;color:var(--navy);}
+.service-row p{margin-top:0.35rem;font-size:0.875rem;color:var(--ink-soft);line-height:1.6;}
+
+/* ============ PORTFOLIO ============ */
+.portfolio{background:var(--navy);padding:6rem 0;color:#fff;}
+.portfolio .eyebrow{color:var(--gold-light);}
+.portfolio .eyebrow::before{background:var(--gold-light);}
+.portfolio h2{color:#fff;}
+.portfolio-sub{margin-top:1rem;color:rgba(255,255,255,0.65);font-size:0.95rem;max-width:32rem;}
+.p-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:3rem;}
+@media (min-width:768px){ .p-grid{grid-template-columns:repeat(3,1fr);} }
+.p-tile{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;}
+.p-tile img{width:100%;height:100%;object-fit:cover;transition:transform 500ms var(--ease);}
+@media (hover:hover){ .p-tile:hover img{transform:scale(1.06);} }
+.p-tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, transparent 40%, rgba(10,18,30,0.9) 100%);}
+.p-cap{position:absolute;left:1.25rem;right:1.25rem;bottom:1.1rem;z-index:2;}
+.p-cap .cat{font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--gold-light);}
+.p-cap .name{font-family:var(--font-display);font-size:1.2rem;margin-top:0.25rem;}
+
+/* ============ ABOUT (founder) ============ */
+.about{background:var(--surface);padding:6rem 0;}
+.about-grid{display:grid;grid-template-columns:1fr;gap:3rem;align-items:center;}
+@media (min-width:900px){ .about-grid{grid-template-columns:1fr 1fr;gap:4rem;} }
+.about-img{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;}
+.about-img img{width:100%;height:100%;object-fit:cover;}
+.about-text p{margin-top:1rem;font-size:0.95rem;line-height:1.85;color:var(--ink-soft);}
+.about-text p:first-of-type{margin-top:1.25rem;}
+
+/* ============ TESTIMONIALS ============ */
+.testimonials{background:var(--surface-2);padding:6rem 0;}
+.t-grid{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:3rem;}
+@media (min-width:768px){ .t-grid{grid-template-columns:repeat(3,1fr);} }
+.t-card{background:#fff;padding:2rem;border-radius:var(--radius);box-shadow:0 1px 3px rgba(10,18,30,0.06);}
+.t-card .quote{font-family:var(--font-display);font-size:2.25rem;color:var(--gold);line-height:1;}
+.t-card blockquote{margin-top:0.75rem;font-size:1rem;line-height:1.6;color:var(--ink);}
+.t-card figcaption{margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--hairline);font-size:0.85rem;}
+.t-card figcaption .n{font-weight:600;color:var(--navy);}
+.t-card figcaption .r{color:var(--ink-soft);}
+
+/* ============ CONTACT / FOOTER ============ */
+.contact-cta{background:var(--navy);color:#fff;padding:5rem 0;text-align:center;}
+.contact-cta h2{color:#fff;font-size:2.25rem;}
+@media (min-width:640px){ .contact-cta h2{font-size:2.75rem;} }
+.contact-cta p{margin-top:1rem;color:rgba(255,255,255,0.65);max-width:34rem;margin-inline:auto;}
+.contact-cta .btn{margin-top:2rem;}
+
+footer.site-footer{background:var(--navy-deep);color:rgba(255,255,255,0.75);padding:3.5rem 0 1.75rem;}
+.footer-grid{display:grid;grid-template-columns:1fr;gap:2.5rem;}
+@media (min-width:768px){ .footer-grid{grid-template-columns:1.3fr 1fr 1fr;} }
+.footer-brand img{height:2.6rem;filter:drop-shadow(0 1px 2px rgba(0,0,0,0.4));}
+.footer-brand p{margin-top:1rem;font-size:0.85rem;line-height:1.7;max-width:20rem;color:rgba(255,255,255,0.55);}
+.footer-col h4{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.14em;color:rgba(255,255,255,0.45);margin-bottom:1rem;}
+.footer-col ul{display:flex;flex-direction:column;gap:0.65rem;font-size:0.85rem;}
+.footer-col a:hover{color:#fff;}
+.footer-bottom{margin-top:3rem;padding-top:1.75rem;border-top:1px solid rgba(255,255,255,0.1);display:flex;flex-direction:column;gap:0.75rem;font-size:0.75rem;color:rgba(255,255,255,0.4);}
+@media (min-width:640px){ .footer-bottom{flex-direction:row;justify-content:space-between;} }
+
+/* ============ MODAL ============ */
+.modal-root{position:fixed;inset:0;z-index:90;display:flex;align-items:center;justify-content:center;padding:1rem;pointer-events:none;}
+.modal-backdrop{position:absolute;inset:0;background:rgba(10,18,30,0.55);backdrop-filter:blur(4px);opacity:0;transition:opacity 300ms var(--ease);}
+.modal-root.open{pointer-events:auto;}
+.modal-root.open .modal-backdrop{opacity:1;}
+.modal-panel{
+  position:relative;width:100%;max-width:28rem;max-height:92svh;overflow-y:auto;
+  background:#fff;border-radius:var(--radius);padding:2rem;
+  opacity:0;transform:translateY(20px) scale(0.97);transition:opacity 300ms var(--ease),transform 300ms var(--ease);
+}
+.modal-root.open .modal-panel{opacity:1;transform:translateY(0) scale(1);}
+.modal-head{display:flex;justify-content:space-between;align-items:flex-start;}
+.modal-head h2{font-size:1.75rem;color:var(--navy);}
+.icon-close{width:2.25rem;height:2.25rem;border-radius:50%;background:var(--surface);display:grid;place-items:center;flex:none;}
+.icon-close svg{width:1rem;height:1rem;}
+.modal-form{margin-top:1.5rem;display:flex;flex-direction:column;gap:1rem;}
+.field label{display:block;font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--ink-soft);margin-bottom:0.4rem;}
+.field input,.field textarea{width:100%;border:1px solid var(--hairline);border-radius:4px;padding:0.7rem 0.9rem;font-size:0.875rem;font-family:inherit;background:var(--surface);}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--gold);}
+.success-panel{display:none;margin-top:1.5rem;text-align:center;}
+.success-panel.show{display:block;}
+.success-panel .check{width:2.75rem;height:2.75rem;border-radius:50%;background:var(--gold);display:grid;place-items:center;margin:0 auto;}
+.success-panel .check svg{width:1.3rem;height:1.3rem;stroke:#fff;}
+.success-panel h3{margin-top:0.75rem;color:var(--navy);}
+.success-panel p{margin-top:0.4rem;font-size:0.85rem;color:var(--ink-soft);}
+.success-panel .btn{margin-top:1.25rem;}
+
+/* ============ MOBILE MENU ============ */
+.menu-root{position:fixed;inset:0;z-index:80;pointer-events:none;}
+.menu-root.open{pointer-events:auto;}
+.menu-backdrop{position:absolute;inset:0;background:var(--navy-deep);opacity:0;transition:opacity 350ms var(--ease);}
+.menu-root.open .menu-backdrop{opacity:1;}
+.menu-panel{position:relative;height:100%;padding:1.5rem;display:flex;flex-direction:column;color:#fff;
+  opacity:0;transform:translateY(-16px);transition:opacity 350ms var(--ease),transform 350ms var(--ease);}
+.menu-root.open .menu-panel{opacity:1;transform:translateY(0);}
+.menu-top{display:flex;justify-content:space-between;align-items:center;}
+.menu-top img{height:2.4rem;filter:drop-shadow(0 1px 2px rgba(0,0,0,0.4));}
+.menu-top .icon-close{background:rgba(255,255,255,0.12);}
+.menu-nav{flex:1;display:flex;flex-direction:column;justify-content:center;gap:1.5rem;}
+.menu-nav a{font-family:var(--font-display);font-size:2.25rem;}
+.menu-nav a:hover{color:var(--gold-light);}
+.menu-bottom{border-top:1px solid rgba(255,255,255,0.15);padding-top:1.5rem;font-size:0.9rem;display:flex;flex-direction:column;gap:0.5rem;color:rgba(255,255,255,0.8);}
+</style>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <a href="#hero" class="logo-chip" data-scroll><img src="assets/logo.png" alt="Ponvasantham Construction logo"></a>
+  <nav class="hdr-nav">
+    <a href="#hero" data-scroll>Home</a>
+    <a href="#services" data-scroll>Services</a>
+    <a href="#portfolio" data-scroll>Portfolio</a>
+    <a href="#about" data-scroll>About</a>
+    <a href="#testimonials" data-scroll>Reviews</a>
+  </nav>
+  <div class="hdr-right">
+    <a class="hdr-call" href="tel:+917695813552">76958 13552</a>
+    <button class="btn btn-gold" data-open-modal>Contact Us</button>
+    <button class="burger" data-open-menu aria-label="Open menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-bg"><img src="assets/hero-crane.jpg" alt="Tower crane and concrete structure on a construction site at sunset" loading="eager" fetchpriority="high"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-content">
+    <h1 class="reveal">Building Excellence For<br>Over 15 Years</h1>
+    <p class="hero-services reveal" style="transition-delay:120ms">
+      <span>Residential &amp; Commercial Buildings</span>
+      <span>Renovation &amp; Remodeling</span>
+      <span>Landscaping</span>
+      <span>Swimming Pool Construction</span>
+      <span>Driveways &amp; Pathways</span>
+    </p>
+    <div class="hero-actions reveal" style="transition-delay:220ms">
+      <button class="btn btn-gold" data-scroll data-href="#portfolio">View Our Work</button>
+      <a class="btn-ghost" href="#about" data-scroll>
+        Learn About Our Capabilities
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPIRIT / ABOUT INTRO ============ -->
+<section class="spirit" id="about">
+  <div class="wrap">
+    <p class="spirit-script reveal">Spirit of Excellence</p>
+    <div class="spirit-grid">
+      <div class="spirit-text reveal">
+        <p>At Ponvasantham Construction, our goal is to provide exceptional building, renovation, and outdoor construction services while maintaining the highest standards of quality, safety, and customer care.</p>
+        <p>Founded in <span class="founder">2011 by our founder, P. Murugan, in Pondicherry</span>, the company began with a commitment to honest, well-supervised construction work. Over the years, that reputation carried our services across Tamil Nadu, and today we build homes, commercial spaces, and outdoor projects for clients throughout the region.</p>
+        <a class="spirit-link" href="#services" data-scroll>
+          More About Our Services
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="collage reveal" style="transition-delay:150ms">
+        <figure class="collage-main"><img src="assets/site-dusk.jpg" alt="Multi-storey building under construction with a tower crane at dusk" loading="lazy"></figure>
+        <figure class="collage-inset"><img src="assets/pour.jpg" alt="Construction worker overseeing a concrete pour" loading="lazy"></figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="stat-band reveal">
+    <div class="wrap">
+      <div class="stat-cell"><div class="num">15+</div><div class="lbl">Years In Business</div></div>
+      <div class="stat-cell"><div class="num">35+</div><div class="lbl">Projects Completed</div></div>
+      <div class="stat-cell"><div class="num">5</div><div class="lbl">Core Services</div></div>
+      <div class="stat-cell"><div class="num">2</div><div class="lbl">States Served</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-strip">
+  <div class="wrap">
+    <span><strong>Ponvasantham Construction Private Limited</strong></span>
+    <span>Registered under the Companies Act, 2013</span>
+    <span>CIN U43122TN2026PTC194313</span>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">What We Build</div>
+      <h2>Services Built Around Your Project</h2>
+    </div>
+    <div class="services-layout">
+      <figure class="services-image reveal"><img src="assets/blueprint.jpg" alt="Architectural blueprint, hard hat and measuring tape on a table" loading="lazy"></figure>
+      <div class="services-list">
+        <div class="service-row reveal">
+          <span class="service-num">01</span>
+          <div><h3>Residential &amp; Commercial Buildings</h3><p>Full-scale builds for homes, offices, and commercial spaces, from foundation to finish.</p></div>
+        </div>
+        <div class="service-row reveal" style="transition-delay:80ms">
+          <span class="service-num">02</span>
+          <div><h3>Renovation &amp; Remodeling</h3><p>Refreshing existing structures with modern design and durable materials.</p></div>
+        </div>
+        <div class="service-row reveal" style="transition-delay:160ms">
+          <span class="service-num">03</span>
+          <div><h3>Landscaping</h3><p>Outdoor spaces shaped with the same precision as the buildings around them.</p></div>
+        </div>
+        <div class="service-row reveal" style="transition-delay:240ms">
+          <span class="service-num">04</span>
+          <div><h3>Swimming Pool Design &amp; Construction</h3><p>Custom pools engineered for durability and built to your site.</p></div>
+        </div>
+        <div class="service-row reveal" style="transition-delay:320ms">
+          <span class="service-num">05</span>
+          <div><h3>Driveways &amp; Pathways</h3><p>Concrete and paved surfaces built to handle daily wear for years.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO ============ -->
+<section class="portfolio" id="portfolio">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Our Work</div>
+      <h2>A Look At The Job Site</h2>
+      <p class="portfolio-sub">From groundwork to final finish, every project is supervised on-site to the same standard.</p>
+    </div>
+    <div class="p-grid">
+      <figure class="p-tile reveal">
+        <img src="assets/hero-crane.jpg" alt="Concrete structure under construction with a tower crane" loading="lazy">
+        <figcaption class="p-cap"><div class="cat">Structural Work</div><div class="name">Foundation to Frame</div></figcaption>
+      </figure>
+      <figure class="p-tile reveal" style="transition-delay:80ms">
+        <img src="assets/pour.jpg" alt="Worker directing a concrete pour on site" loading="lazy">
+        <figcaption class="p-cap"><div class="cat">Concrete Work</div><div class="name">Poured &amp; Supervised</div></figcaption>
+      </figure>
+      <figure class="p-tile reveal" style="transition-delay:160ms">
+        <img src="assets/site-dusk.jpg" alt="Multi-storey building under construction at dusk" loading="lazy">
+        <figcaption class="p-cap"><div class="cat">Commercial Build</div><div class="name">Multi-Storey Projects</div></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT / FOUNDER ============ -->
+<section class="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <figure class="about-img reveal"><img src="assets/handshake.jpg" alt="Client and contractor shaking hands over blueprints" loading="lazy"></figure>
+      <div class="about-text reveal" style="transition-delay:120ms">
+        <div class="eyebrow">Our Story</div>
+        <h2>A Company Built On Trust</h2>
+        <p>Ponvasantham Construction Private Limited was founded in 2011 by P. Murugan in Pondicherry, starting with small residential projects built on a simple promise: quality work, done honestly, and supervised from start to finish.</p>
+        <p>Over the past 15 years, that approach has taken the company across Tamil Nadu, with 35+ completed projects spanning residential homes, commercial buildings, renovations, landscaping, swimming pools, and driveways. Every site is still personally supervised, the same way it was on day one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials" id="testimonials">
+  <div class="wrap">
+    <div class="section-head reveal" style="margin-inline:auto;text-align:center;">
+      <div class="eyebrow" style="justify-content:center;">What Clients Say</div>
+      <h2>Loved By Our Clients</h2>
+    </div>
+    <ul class="t-grid">
+      <li class="t-card reveal">
+        <div class="quote">&ldquo;</div>
+        <blockquote>They handled everything from the foundation to the final coat and kept us updated the whole way.</blockquote>
+        <figcaption><div class="n">Homeowner</div><div class="r">Residential Build</div></figcaption>
+      </li>
+      <li class="t-card reveal" style="transition-delay:120ms">
+        <div class="quote">&ldquo;</div>
+        <blockquote>Our new driveway and pathway work looks great and has held up through every season since.</blockquote>
+        <figcaption><div class="n">Client</div><div class="r">Driveway Project</div></figcaption>
+      </li>
+      <li class="t-card reveal" style="transition-delay:240ms">
+        <div class="quote">&ldquo;</div>
+        <blockquote>The pool construction was finished on schedule and exactly as we'd planned it.</blockquote>
+        <figcaption><div class="n">Client</div><div class="r">Pool Construction</div></figcaption>
+      </li>
+    </ul>
+    <p style="text-align:center;margin-top:1.5rem;font-size:0.75rem;color:var(--ink-soft);">Placeholder reviews — swap in real client quotes when you have them.</p>
+  </div>
+</section>
+
+<!-- ============ CONTACT CTA ============ -->
+<section class="contact-cta" id="contact">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center;">Get In Touch</div>
+    <h2 class="reveal">Ready To Start Your Project?</h2>
+    <p class="reveal" style="transition-delay:100ms">Call us directly or send your details and our team will get back to you.</p>
+    <button class="btn btn-gold reveal" style="transition-delay:200ms" data-open-modal>Request a Callback</button>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Ponvasantham Construction logo">
+        <p>Residential, commercial, and outdoor construction across Tamil Nadu &amp; Pondicherry. Founded 2011 in Pondicherry.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services" data-scroll>Residential &amp; Commercial</a></li>
+          <li><a href="#services" data-scroll>Renovation &amp; Remodeling</a></li>
+          <li><a href="#services" data-scroll>Landscaping</a></li>
+          <li><a href="#services" data-scroll>Swimming Pools</a></li>
+          <li><a href="#services" data-scroll>Driveways &amp; Pathways</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+917695813552">76958 13552</a></li>
+          <li><a href="tel:+919952813552">99528 13552</a></li>
+          <li>No. 210B, 3rd Main Road, Thirumalai Nagar, HPM, Rajakilpakkam, Tambaram, Kanchipuram – 600073, Tamil Nadu</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ponvasantham Construction Private Limited. All rights reserved.</span>
+      <span>CIN U43122TN2026PTC194313</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ CONTACT MODAL ============ -->
+<div class="modal-root" id="modalRoot" aria-hidden="true">
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-head">
+      <h2 id="modalTitle">Request a Callback</h2>
+      <button class="icon-close" data-close-modal aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <form class="modal-form" id="contactForm" novalidate>
+      <div class="field"><label for="f-name">Full name</label><input type="text" id="f-name" name="name" placeholder="Ramesh Kumar" required></div>
+      <div class="field"><label for="f-phone">Phone number</label><input type="tel" id="f-phone" name="phone" placeholder="98765 43210" required></div>
+      <div class="field"><label for="f-msg">What would you like to build?</label><textarea id="f-msg" name="message" rows="3" placeholder="I'd like a quote for a new driveway…"></textarea></div>
+      <button type="submit" class="btn btn-dark" id="submitBtn" style="align-self:flex-start;">Request a Callback</button>
+    </form>
+    <div class="success-panel" id="successPanel">
+      <div class="check"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+      <h3>Request received</h3>
+      <p id="successText">Thanks — our team will call you back shortly.</p>
+      <button class="btn btn-dark" id="doneBtn">Done</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="menu-root" id="menuRoot" aria-hidden="true">
+  <div class="menu-backdrop" data-close-menu></div>
+  <div class="menu-panel">
+    <div class="menu-top">
+      <img src="assets/logo.png" alt="Ponvasantham Construction logo">
+      <button class="icon-close" data-close-menu aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <nav class="menu-nav">
+      <a href="#hero" data-scroll>Home</a>
+      <a href="#services" data-scroll>Services</a>
+      <a href="#portfolio" data-scroll>Portfolio</a>
+      <a href="#about" data-scroll>About</a>
+      <a href="#testimonials" data-scroll>Reviews</a>
+    </nav>
+    <div class="menu-bottom">
+      <a href="tel:+917695813552">76958 13552</a>
+      <a href="tel:+919952813552">99528 13552</a>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+import Lenis from "lenis";
+const lenis = new Lenis({ smoothWheel: true });
+function raf(t){ lenis.raf(t); requestAnimationFrame(raf); }
+requestAnimationFrame(raf);
+window.scrollTo(0,0);
+
+function lockScroll(){ document.documentElement.classList.add('lock'); lenis.stop(); }
+function unlockScroll(){ document.documentElement.classList.remove('lock'); lenis.start(); }
+
+document.querySelectorAll('[data-scroll]').forEach(a=>{
+  a.addEventListener('click', e=>{
+    const href = a.getAttribute('href') || a.getAttribute('data-href');
+    if(href && href.startsWith('#')){
+      e.preventDefault();
+      closeMenu();
+      const target = document.querySelector(href);
+      if(target) lenis.scrollTo(target, { offset:-20 });
+    }
+  });
+});
+
+/* header solid on scroll */
+const header = document.getElementById('siteHeader');
+function onScroll(){
+  if(window.scrollY > 80) header.classList.add('solid');
+  else header.classList.remove('solid');
+}
+lenis.on('scroll', onScroll);
+onScroll();
+
+/* reveal on scroll */
+const io = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+},{ threshold:0.15 });
+document.querySelectorAll('.reveal').forEach(el=> io.observe(el));
+
+/* modal */
+const modalRoot = document.getElementById('modalRoot');
+const contactForm = document.getElementById('contactForm');
+const submitBtn = document.getElementById('submitBtn');
+const successPanel = document.getElementById('successPanel');
+const successText = document.getElementById('successText');
+function openModal(){ modalRoot.classList.add('open'); modalRoot.setAttribute('aria-hidden','false'); lockScroll(); setTimeout(()=>document.getElementById('f-name').focus(),120); }
+function closeModal(){
+  modalRoot.classList.remove('open'); modalRoot.setAttribute('aria-hidden','true'); unlockScroll();
+  setTimeout(()=>{ contactForm.reset(); contactForm.style.display=''; successPanel.classList.remove('show'); submitBtn.disabled=false; submitBtn.textContent='Request a Callback'; },350);
+}
+document.querySelectorAll('[data-open-modal]').forEach(b=> b.addEventListener('click', openModal));
+document.querySelectorAll('[data-close-modal]').forEach(b=> b.addEventListener('click', closeModal));
+contactForm.addEventListener('submit', e=>{
+  e.preventDefault();
+  submitBtn.disabled = true; submitBtn.textContent = 'Sending…';
+  const name = document.getElementById('f-name').value.trim();
+  const firstName = name ? name.split(' ')[0] : 'there';
+  setTimeout(()=>{
+    contactForm.style.display='none';
+    successText.textContent = `Thanks, ${firstName} — our team will call you back to discuss your project.`;
+    successPanel.classList.add('show');
+  },700);
+});
+document.getElementById('doneBtn').addEventListener('click', closeModal);
+
+/* mobile menu */
+const menuRoot = document.getElementById('menuRoot');
+function openMenu(){ menuRoot.classList.add('open'); menuRoot.setAttribute('aria-hidden','false'); lockScroll(); }
+function closeMenu(){ menuRoot.classList.remove('open'); menuRoot.setAttribute('aria-hidden','true'); if(!modalRoot.classList.contains('open')) unlockScroll(); }
+document.querySelectorAll('[data-open-menu]').forEach(b=> b.addEventListener('click', openMenu));
+document.querySelectorAll('[data-close-menu]').forEach(b=> b.addEventListener('click', closeMenu));
+
+document.addEventListener('keydown', e=>{
+  if(e.key==='Escape'){
+    if(modalRoot.classList.contains('open')) closeModal();
+    if(menuRoot.classList.contains('open')) closeMenu();
+  }
+});
+</script>
+</body>
+</html>
